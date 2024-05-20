@@ -20,6 +20,11 @@
 👉 https://master--rickandmortytestel5.netlify.app
 
 
+### Autenticação
+
+Na pagina de login digite: Usuario: teste@gmail.com Senha: admin123
+
+
 ### Feito com carinho 😎😁😁
 #### Espero que gostem 😁
 
