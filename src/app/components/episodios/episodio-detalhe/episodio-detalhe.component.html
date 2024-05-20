@@ -1,0 +1,18 @@
+<div class="container-fluid d-flex justify-content-center">
+  @for (item of listaEpisodioDetalhe; track item) {
+    <div  class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <ul class="card-body nav-item">
+          <li class="card-text nav-link"><strong>Episódio:</strong>  {{ item.episodio }}</li>
+          <li class="card-text nav-link"><strong>Data:</strong>  {{ item.data | date:'dd/MM/yyyy' }}</li>
+          <li class="card-text nav-link"><strong>Origem: </strong>{{ item.criado | date:'dd/MM/yyyy' }}</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <a class="btn btn-dark" routerLink="/home/episodio">Voltar</a>
+      </div>
+    </div>
+  }
+</div>
+

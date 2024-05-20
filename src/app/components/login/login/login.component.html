@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+  <form class="container-fluid w-50 shadow p-3" [formGroup]="FormLogin">
+    <div class="mb-3">
+      <h1 class="h1 text-center">Faça seu login:</h1>
+    </div>
+    @if(mensagem) {
+      <div class="alert alert-danger" role="alert">
+        {{mensagem}}
+      </div>
+    }
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome:</label>
+      <input id="nome" type="text" formControlName="nome" class="form-control"  aria-describedby="nome">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input id="email" type="email" formControlName="email" class="form-control"  aria-describedby="email">
+      @if(FormLogin.controls['email'].errors?.['required']){
+        <div>
+          <small class="text-danger">Email Obrigatório</small>
+        </div>
+      }
+    </div>
+    <div class="mb-3">
+      <label for="senha"  class="form-label">Senha</label>
+      <input id="senha" type="password" formControlName="senha" class="form-control">
+      @if(FormLogin.controls['senha'].errors?.['required']){
+        <div>
+          <small class="text-danger">Senha Obrigatória</small>
+        </div>
+      }
+    </div>
+    <div>
+      @if(FormLogin.valid) {
+        <button (click)="onSubmit()"  type="submit" class="btn btn-primary">Entrar</button>
+      }@else {
+        <button (click)="onSubmit()" disabled type="submit" class="btn btn-primary">Entrar</button>
+      }
+    </div>
+  </form>
+</div>

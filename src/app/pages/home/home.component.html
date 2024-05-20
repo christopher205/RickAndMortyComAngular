@@ -1,0 +1,48 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+      <div class="container">
+        <div>
+          <img class="d-block w-25" src="https://www.l5.com.br/hubfs/Logo%20L5.png" alt="logo L5">
+        </div>
+        <div class="container-fluid">
+          <ul class="navbar-nav justify-content-end me-auto mb-2">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#"><strong>Rick and Morty API</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#"><strong>Teste L5</strong></a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="navbar-brand" href="#"><strong>Ola: {{ usuario }}</strong></a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="navbar-brand" href="#" (click)="logout" ><strong>Sair</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+</header>
+<div class="container m-0 d-flex gap-3 mw-100">
+<aside class="d-flex flex-column flex-shrink-0 min-vh-100 bg-light border" style="width: 280px;">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    <span class="fs-4">Escolha:</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a routerLink="/home/personagem" routerLinkActive="active" class="nav-link link-dark" aria-current="page">
+        Personagens
+      </a>
+    </li>
+    <li>
+      <a routerLink="/home/episodio" routerLinkActive="active" class="nav-link link-dark">
+        Episódios
+      </a>
+    </li>
+  </ul>
+  <hr>
+</aside>
+  <router-outlet></router-outlet>
+</div>

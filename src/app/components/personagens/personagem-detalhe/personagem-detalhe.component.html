@@ -1,0 +1,22 @@
+<div class="container-fluid d-flex justify-content-center">
+  @for (item of listaPersonagemDetalhe; track item) {
+    <div  class="card">
+      <img src="{{item.image}}" class="card-img-top img-thumbnail rounded-circle" alt="personagem">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <ul class="card-body nav-item">
+          <li class="card-text nav-link"><strong>Genero:</strong>  {{ item.genero }}</li>
+          <li class="card-text nav-link"><strong>Especie:</strong>  {{ item.especie }}</li>
+          <li class="card-text nav-link"><strong>Origem: </strong>{{ item.origem }}</li>
+          <li class="card-text nav-link"><strong>Status:</strong> {{ item.status }}</li>
+          <li class="card-text nav-link"><strong>Cidade:</strong> {{ item.cidade }}</li>
+          <li class="card-text nav-link"><strong>Tipo:</strong> {{ item.tipo }}</li>
+          <li class="card-text nav-link"><strong>Criado em:</strong> {{ item.criado | date:'dd/MM/yyyy' }}</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <a class="btn btn-dark" routerLink="/home/personagem">Voltar</a>
+      </div>
+    </div>
+  }
+</div>

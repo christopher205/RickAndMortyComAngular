@@ -1,0 +1,12 @@
+<app-busca></app-busca>
+<div class="d-flex flex-row flex-wrap justify-content-center gap-3">
+  @for (item of listaPersonagemFiltrado; track item) {
+    <div  class="card">
+      <img src="{{item.image}}" class="card-img-top img-thumbnail rounded-circle" alt="personagem">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <a routerLink="/home/detalhesPersonagem/{{item.id}}" class="btn btn-primary">Detalhes</a>
+      </div>
+    </div>
+  }
+</div>
