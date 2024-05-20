@@ -1,11 +1,26 @@
 # Projeto com Angular 17 !
 
-## Projeto usando a RickAn Morty api que pode ser encontrada aqui : https://rickandmortyapi.com/
+👉 usando bootstrap para o css!
 
- https://rickandmortyapi.com/
+## Projeto usando a Rick And Morty api que pode ser encontrada aqui : https://rickandmortyapi.com/
+
+ 👉 https://rickandmortyapi.com/
+
+
+ 
 
 ## Para rodar em localhost
 
-Rode "ng serve" => . Navegue para `http://localhost:4200/`.
+👉 "ng serve" => . Navegue para `http://localhost:4200/`.
+
+
+
+### Deploy no Netlify ! Você pode conferir o resultado neste link:
+
+👉 https://master--rickandmortytestel5.netlify.app
+
+
+### Feito com carinho 😎😁😁
+#### Espero que gostem 😁
 
 
