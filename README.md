@@ -17,7 +17,7 @@
 
 ### Deploy no Netlify ! Você pode conferir o resultado neste link:
 
-👉 https://master--rickandmortytestel5.netlify.app
+👉 https://master--rickandmortycomangular.netlify.app/
 
 
 ### Autenticação
